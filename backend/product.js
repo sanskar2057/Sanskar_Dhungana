@@ -12,7 +12,7 @@ const courierCharges = [
     { maxWeight: 1000, charge: 15 },
     { maxWeight: 5000, charge: 20 }
 ];
-//Takes weight and finds it shipping cost
+//Takes weight and finds the shipping cost
 const getCourierCharge = (weight) => {
     for (let charge of courierCharges) {
         if (weight <= charge.maxWeight) {
